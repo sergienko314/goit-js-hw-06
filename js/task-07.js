@@ -7,6 +7,6 @@ function call() {
   text.style.fontSize = textInput.value + "px";
 }
 
-// textInput.addEventListener("change", ({ currentTarget: { value } }) => {
-//   text.style.fontSize = `${value}px`;
-// });
+textInput.addEventListener("input", ({ currentTarget: { value } }) => {
+  text.style.fontSize = `${value}px`;
+});
