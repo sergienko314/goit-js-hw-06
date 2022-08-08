@@ -22,6 +22,7 @@ function call() {
     arr.push(newDiv);
   }
   divEl.append(...arr);
+  inputEl.value = "";
 }
 
 function fooDestroy() {

@@ -5,15 +5,14 @@ const inputPass = document.querySelector('[name="password"]');
 formEl.addEventListener("submit", (event) => {
   event.preventDefault();
   if (inputMail.value.trim() === "" || inputPass.value.trim() === "") {
-    alert("Пустое поле!!!");
-    console.log(event);
+    return alert("Пустое поле!!!");
   }
   const arr = {
     mail: inputMail.value,
     password: inputPass.value,
   };
   console.log(arr);
-  event.currentTarget.reset();
+  event.target.reset();
 });
 
 // const {
